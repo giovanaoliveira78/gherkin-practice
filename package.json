@@ -1,0 +1,15 @@
+{
+  "name": "gherkin-practice",
+  "version": "1.0.0",
+  "description": "Studies focused on practicing Gherkin writing to improve my skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "author": "Giovana Oliveira",
+  "license": "ISC",
+  "keywords": [],
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0"
+  }
+}
