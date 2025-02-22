@@ -20,12 +20,19 @@ Feature: Iniciar uma atividade
     Then devo visualizar a lista das atividades que devem ser realizadas nesta etapa
 
 Feature: Ler as notícias da semana
-  Given que estou na tela inicial do aplicativo
-  When eu clicar no ícone de "três pontinhos"
-  And clicar em "notificações"
-  Then devo visualizar as notícias da semana, como pontuação de amigos e artigos da plataforma
+    Given que estou na tela inicial do aplicativo
+    When eu clicar no ícone de "três pontinhos"
+    And clicar em "notificações"
+    Then devo visualizar as notícias da semana, como pontuação de amigos e artigos da plataforma
 
 Feature: Visualizar meu perfil de usuário
-  Given que estou na tela inicial do aplicativo
-  When eu clicar no ícone de "persona"
-  Then devo visualizar meu perfil
+    Given que estou na tela inicial do aplicativo
+    When eu clicar no ícone de "persona"
+    Then devo visualizar meu perfil
+
+Feature: Visualizar minhas conquistas
+    Given que estou na tela inicial do aplicativo
+    When eu clicar no ícone de "persona"
+    And visualizar o card de "Conquistas"
+    When eu clicar em "VER TODAS"
+    Then devo visualizar todas as minhas conquistas
