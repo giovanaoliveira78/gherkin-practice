@@ -2,12 +2,12 @@ Feature: Visualização de ranking
 
   Scenario: Deve visualizar a posição atual no ranking
     Given que estou na tela inicial do aplicativo
-    When eu clicar no icone de "troféu"
+    When eu clicar no ícone de "troféu"
     Then devo visualizar minha posição no ranking
 
   Scenario: Ainda não entrou no ranking da semana
     Given que estou na tela inicial do aplicativo
-    When eu clicar no icone de "troféu"
+    When eu clicar no ícone de "troféu"
     Then devo visualizar a mensagem "Faça uma lição para participar do ranking da semana"
 
 Feature: Iniciar uma atividade
@@ -21,6 +21,11 @@ Feature: Iniciar uma atividade
 
 Feature: Ler as notícias da semana
   Given que estou na tela inicial do aplicativo
-  When eu clicar no icone de "três pontinhos"
-  And clicar em "Notificações"
+  When eu clicar no ícone de "três pontinhos"
+  And clicar em "notificações"
   Then devo visualizar as notícias da semana, como pontuação de amigos e artigos da plataforma
+
+Feature: Visualizar meu perfil de usuário
+  Given que estou na tela inicial do aplicativo
+  When eu clicar no ícone de "persona"
+  Then devo visualizar meu perfil
