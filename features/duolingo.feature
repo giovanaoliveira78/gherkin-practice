@@ -36,3 +36,8 @@ Feature: Visualizar minhas conquistas
     And visualizar o card de "Conquistas"
     When eu clicar em "VER TODAS"
     Then devo visualizar todas as minhas conquistas
+
+Feature: Visualizar em quanto tempo terei mais vidas disponíveis, após perder vidas
+    Given que estou na tela inicial do aplicativo
+    When eu clicar no ícone de "coração" no canto superior direito
+    Then devo visualizar quantas vidas eu tenho e quando irá recarregar as vidas
