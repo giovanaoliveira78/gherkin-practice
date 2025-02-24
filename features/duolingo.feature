@@ -42,7 +42,12 @@ Feature: Visualizar em quanto tempo terei mais vidas disponíveis, após perder 
     When eu clicar no ícone de "coração" no canto superior direito
     Then devo visualizar quantas vidas eu tenho e quando irá recarregar as vidas
 
-Feature: Visualiizar minha ofensiva
+Feature: Visualizar minha ofensiva
     Given que estou na tela inicial do aplicativo
     When eu clicar no ícone de "fogo"
     Then devo visualizar quantos dias de ofensiva eu possuo
+
+Feature: Visualizar minhas quantidades de diamantes
+    Given que estou na tela inicial do aplicativo
+    When eu clicar no ícone de "diamante"
+    Then devo visualizar a quantidade de diamantes que possuo
