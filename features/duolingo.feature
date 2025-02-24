@@ -20,17 +20,22 @@ Feature: Iniciar uma atividade
     Then devo visualizar a lista das atividades que devem ser realizadas nesta etapa
 
 Feature: Ler as notícias da semana
+
+  Scenario: Deve exibir as notícias da semana ao clicar em "notificações"
     Given que estou na tela inicial do aplicativo
     When eu clicar no ícone de "três pontinhos"
     And clicar em "notificações"
     Then devo visualizar as notícias da semana, como pontuação de amigos e artigos da plataforma
 
 Feature: Visualizar meu perfil de usuário
+
+  Scenario: Deve permitir a visualização do perfil do usuário
     Given que estou na tela inicial do aplicativo
     When eu clicar no ícone de "persona"
     Then devo visualizar meu perfil
 
 Feature: Visualizar minhas conquistas
+  Scenario: Deve permitir visualizar as conquistas obtidas
     Given que estou na tela inicial do aplicativo
     When eu clicar no ícone de "persona"
     And visualizar o card de "Conquistas"
@@ -38,16 +43,21 @@ Feature: Visualizar minhas conquistas
     Then devo visualizar todas as minhas conquistas
 
 Feature: Visualizar em quanto tempo terei mais vidas disponíveis, após perder vidas
+
+  Scenario: Deve exebir a quantidade de vidas disponíveis
     Given que estou na tela inicial do aplicativo
     When eu clicar no ícone de "coração" no canto superior direito
     Then devo visualizar quantas vidas eu tenho e quando irá recarregar as vidas
 
 Feature: Visualizar minha ofensiva
+
+  Scenario: Deve permitir que a ofensiva seja visualizada
     Given que estou na tela inicial do aplicativo
     When eu clicar no ícone de "fogo"
     Then devo visualizar quantos dias de ofensiva eu possuo
 
 Feature: Visualizar minhas quantidades de diamantes
+  Scenario: Deve permitir visualizar a quantidade de diamantes disponíveis
     Given que estou na tela inicial do aplicativo
     When eu clicar no ícone de "diamante"
     Then devo visualizar a quantidade de diamantes que possuo
