@@ -61,3 +61,7 @@ Feature: Visualizar minhas quantidades de diamantes
     Given que estou na tela inicial do aplicativo
     When eu clicar no ícone de "diamante"
     Then devo visualizar a quantidade de diamantes que possuo
+
+Feature: Adicionar amigos
+  Scenario: Deve sugerir para adicionar amigos
+    Given que estou na tela inicial do aplicativo
