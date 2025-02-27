@@ -65,3 +65,5 @@ Feature: Visualizar minhas quantidades de diamantes
 Feature: Adicionar amigos
   Scenario: Deve sugerir para adicionar amigos
     Given que estou na tela inicial do aplicativo
+    When eu clicar no ícone de "persona" e depois clicar no botão de "adicionar amigos"
+    Then devo visualizar as pções para encontrar amigos, que são "escolher nos contatos", "buscar por nome" ou "compartilhar link da sua conta"
