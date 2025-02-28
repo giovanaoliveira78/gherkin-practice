@@ -73,3 +73,9 @@ Feature: Visualizar os desafios do período
     Given que estou na tela inicial do aplicativo
     When eu clicar no ícone de "bau"
     Then devo visualizar os desafios do período e como está o andamento dos desafios
+
+Feature: Visualizar minha pontução referente ao nível de fluência no idioma
+  Scenario: Deve visualizar a pontuação
+    Given que estou na tela inicial do aplicativo
+    When eu clicar no ícone de "bandeira"
+    Then devo visualizar qual é a minha pontuação e a explicação de cada nível
