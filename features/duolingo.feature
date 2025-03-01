@@ -79,3 +79,9 @@ Feature: Visualizar minha pontução referente ao nível de fluência no idioma
     Given que estou na tela inicial do aplicativo
     When eu clicar no ícone de "bandeira"
     Then devo visualizar qual é a minha pontuação e a explicação de cada nível
+
+Feature: Visualizar frases importantes da unidade de aprendizado
+  Scenario: Deve visualizar as frases importantes da unidade
+    Given que estou na tela inicial do aplicativo
+    When eu clicar no ícone de caderno
+    Then devo visualizar todas as frases importantes, escritas no idioma de aprendizagem, tradução, e áudio com a pronuncia.
