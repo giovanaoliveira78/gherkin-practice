@@ -44,7 +44,7 @@ Feature: Visualizar minhas conquistas
 
 Feature: Visualizar em quanto tempo terei mais vidas disponíveis, após perder vidas
 
-  Scenario: Deve exebir a quantidade de vidas disponíveis
+  Scenario: Deve exibir a quantidade de vidas disponíveis
     Given que estou na tela inicial do aplicativo
     When eu clicar no ícone de "coração" no canto superior direito
     Then devo visualizar quantas vidas eu tenho e quando irá recarregar as vidas
@@ -84,4 +84,10 @@ Feature: Visualizar frases importantes da unidade de aprendizado
   Scenario: Deve visualizar as frases importantes da unidade
     Given que estou na tela inicial do aplicativo
     When eu clicar no ícone de caderno
-    Then devo visualizar todas as frases importantes, escritas no idioma de aprendizagem, tradução, e áudio com a pronuncia.
+    Then devo visualizar todas as frases importantes, escritas no idioma de aprendizagem, tradução, e áudio com a pronuncia
+
+Feature: Visualizar exercícios de sons no idioma selecionado
+  Scenario: Deve visualizar as lições de sons
+    Given que estou na trla inicial do aplicativo
+    When eu clicar no ícone de "boca"
+    Then devo visualizar as lições de sons
