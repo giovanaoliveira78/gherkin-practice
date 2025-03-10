@@ -9,3 +9,9 @@ Feature: Visualizar as notificações
     Given que estou na tela inicial do aplicativo
     When eu clicar no ícone de "coração" no canto superior direito
     Then devo visualizar todas as minhas notificações
+
+Feature: Visualizar reels
+  Scenario: Deve visualizar reels
+    Given que estou na tela inicial do aplicativo
+    When eu clicar no ícone de "vídeo"
+    Then devo visualizar os reels sugeridos
