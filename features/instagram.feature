@@ -15,3 +15,10 @@ Feature: Visualizar reels
     Given que estou na tela inicial do aplicativo
     When eu clicar no ícone de "vídeo"
     Then devo visualizar os reels sugeridos
+
+Feature: Pesquisar um usuário
+  Scenario: Deve exibir usuários buscados
+    Given que estou na tela inicial do aplicativo
+    When eu clicar no ícone de "lupa"
+    And na barra de pesquisa digitar o nome de um usuário
+    Then devo visualizar todos os usuários que pussem esse nome de usuário
