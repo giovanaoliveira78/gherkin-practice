@@ -34,3 +34,11 @@ Feature: Visualizar mensagens e enviar novas
     When eu clicar no ícone de "chat"
     And na barra de pesquisa digitar o nome do usuário que desejo encaminhar uma mensagem
     Then devo visualizar o chat com o usuário e poder encaminhar uma mensagem
+
+Feature: Acessar os arquivos de stories
+  Scenario: Deve exibir todos os stories já publicados
+    Given que estou na tela inicial do aplicativo
+    And clicar no ícone com a minha foto (ou imagem de persona, caso não possua)
+    And clicar no ícone de "sanduíche" no canto superior direito
+    When eu clicar em "arquivar"
+    Then devo visualizar todos os meus stories já publicados
