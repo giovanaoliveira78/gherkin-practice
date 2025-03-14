@@ -50,3 +50,9 @@ Feature: Acessar publicações salvas
     And clicar no ícone de "sanduíche" no canto superior direito
     When eu clicar em "salvos"
     Then devo visualizar todas as publicações que foram salvas
+
+Feature: Curtir uma publicação
+  Scenario: Deve curtir a publicação
+    Given que estou na tela inicial do aplicativo, visualizando o feed
+    When eu clicar no ícone de coração abaixo da postagem
+    Then a postagem deve ser curtida e ícone de coração deve ficar vermelho
