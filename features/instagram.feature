@@ -63,3 +63,10 @@ Feature: Comentar uma publicação
     When eu clicar no ícone de "balão de mensagem"
     And digitar algo no campo de entrada e clicar no ícone de "flecha" apontado para cima
     Then meu comentário deve ser publicado
+
+Feature: Compartilhar uma publicação via direct
+  Scenario: Deve encaminhar a publicação ao usuário ou grupo de usuários selecionados
+    Given que estou na tela inicial do aplicativo
+    And estou visualizando uma publicação
+    When eu clicar no ícone de "avião de papel", e clicar no ícone com o perfil do usuário grupo de usuários que quero compartilhar, e clicar em "enviar"
+    Then a publicação deve ser compartilhada
