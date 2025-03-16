@@ -56,3 +56,10 @@ Feature: Curtir uma publicação
     Given que estou na tela inicial do aplicativo, visualizando o feed
     When eu clicar no ícone de coração abaixo da postagem
     Then a postagem deve ser curtida e ícone de coração deve ficar vermelho
+
+Feature: Comentar uma publicação
+  Scenario: Deve publicar um comentário em uma publicação
+    Given que estou na tela inicial do aplicativo
+    When eu clicar no ícone de "balão de mensagem"
+    And digitar algo no campo de entrada e clicar no ícone de "flecha" apontado para cima
+    Then meu comentário deve ser publicado
