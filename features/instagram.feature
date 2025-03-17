@@ -70,3 +70,6 @@ Feature: Compartilhar uma publicação via direct
     And estou visualizando uma publicação
     When eu clicar no ícone de "avião de papel", e clicar no ícone com o perfil do usuário grupo de usuários que quero compartilhar, e clicar em "enviar"
     Then a publicação deve ser compartilhada
+
+Feature: Compartilhar uma publicação no story
+  Scenario: Deve comprtilhar uma publicação ao story
