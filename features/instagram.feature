@@ -71,5 +71,10 @@ Feature: Compartilhar uma publicação via direct
     When eu clicar no ícone de "avião de papel", e clicar no ícone com o perfil do usuário grupo de usuários que quero compartilhar, e clicar em "enviar"
     Then a publicação deve ser compartilhada
 
-Feature: Compartilhar uma publicação no story
+Feature: Compartilhar uma publicação no story no modo público
   Scenario: Deve comprtilhar uma publicação ao story
+    Given que estou na tela inicial do aplicativo
+    And estou visualizando uma publicação
+    And clicar no ícone de "avião de papel", e clicar em "adicionar ao story", irá abrir a tela para edição de textos, gifs, figurinhas, enquetes etc
+    When eu clicar em "seu story"
+    Then a publicação deve ser compartilhada ao meu story
