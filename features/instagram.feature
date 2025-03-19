@@ -72,9 +72,17 @@ Feature: Compartilhar uma publicação via direct
     Then a publicação deve ser compartilhada
 
 Feature: Compartilhar uma publicação no story no modo público
-  Scenario: Deve comprtilhar uma publicação ao story
+  Scenario: Deve compartilhar uma publicação ao story
     Given que estou na tela inicial do aplicativo
     And estou visualizando uma publicação
     And clicar no ícone de "avião de papel", e clicar em "adicionar ao story", irá abrir a tela para edição de textos, gifs, figurinhas, enquetes etc
     When eu clicar em "seu story"
     Then a publicação deve ser compartilhada ao meu story
+
+Feature: Compartilhar uma publicação no story no close friends
+  Scenario: Deve compartilhar a publicação no story e apenas as pessoas selecionadas no close friends podem visualizar
+    Given que estou na tela inicial do aplicativo
+    And estou visualizando uma publicação
+    And clicar no ícone de "avião de papel", e clicar em "adicionar ao story", irá abrir a tela para edição de textos, gifs, figurinhas, enquetes etc
+    When eu clicar em "amigos próximos"
+    Then a publicação deve ser compartilhada ao meu story com apenas as pessoas selecionadas podendo visualizar
