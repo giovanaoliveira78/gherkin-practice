@@ -86,3 +86,15 @@ Feature: Compartilhar uma publicação no story no close friends
     And clicar no ícone de "avião de papel", e clicar em "adicionar ao story", irá abrir a tela para edição de textos, gifs, figurinhas, enquetes etc
     When eu clicar em "amigos próximos"
     Then a publicação deve ser compartilhada ao meu story com apenas as pessoas selecionadas podendo visualizar
+
+Feature: Visualizar minha atividade
+
+  Background: Caminho até "Sua atividade"
+    Given que estou na tela inicial do aplicativo
+    And clicar no ícone com a minha foto (ou imagem de persona, caso não possua foto)
+    And clicar no ícone de "sanduíche" no canto superior direito
+    And clicar em "Sua atividade"
+
+  Scenario: Deve exibir a atividade relacionada a curtidas
+    And clicar em "Curtidas"
+    Then devo visualiar todas as publicações que curti
