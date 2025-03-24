@@ -102,3 +102,7 @@ Feature: Visualizar minha atividade
   Scenario: Deve exibir a atividade relacionada a comentários
     And clicar em "Comentários"
     Then devo visualizar todos os comentários que fiz em publicações
+
+  Scenario: Deve exibir a atividade relacionada a compartilhamentos
+    And clicar em "compartilhados"
+    Then devo visualizar todas as publicações que compartilhei
