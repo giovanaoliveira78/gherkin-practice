@@ -104,4 +104,9 @@ Feature: Visualizar minha atividade
     Then devo visualizar todos os comentários que fiz em publicações
 
   Scenario: Deve exibir a atividade relacionada a notas
+    And clicar em "Notas"
     Then devo visualizar todas as notas que deixei em publicações
+
+  Scenario: Deve exibir a atividade relacionada a marcações
+    And clicar em "Marcações"
+    Then devo visualizar todas as publicações em que for marcada
