@@ -110,3 +110,7 @@ Feature: Visualizar minha atividade
   Scenario: Deve exibir a atividade relacionada a marcações
     And clicar em "Marcações"
     Then devo visualizar todas as publicações em que for marcada
+
+  Scenario: Deve exibir a atividade relacionada resposta de figurinhas
+    And clicar em "Respostas de figurinhas"
+    Then devo visualizar todas as respostas que enviei em figurinhas, como enquetes e caixinhas de perguntas
