@@ -118,3 +118,7 @@ Feature: Visualizar minha atividade
   Scenario: Deve exibir as avaliações
     And clicar em "Avaliações"
     Then devo visualizar todas as avaliações
+
+  Scenario: Deve exibir os arquivos excluídos recentemente
+    And clicar em "Excluídos recentemente"
+    Then devo visualizar todos os itens excluídos recentemente
