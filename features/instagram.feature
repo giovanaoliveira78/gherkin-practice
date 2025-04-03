@@ -114,3 +114,7 @@ Feature: Visualizar minha atividade
   Scenario: Deve exibir a atividade relacionada resposta de figurinhas
     And clicar em "Respostas de figurinhas"
     Then devo visualizar todas as respostas que enviei em figurinhas, como enquetes e caixinhas de perguntas
+
+  Scenario: Deve exibir as avaliações
+    And clicar em "Avaliações"
+    Then devo visualizar todas as avaliações
