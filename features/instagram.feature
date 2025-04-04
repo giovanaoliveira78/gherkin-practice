@@ -122,3 +122,8 @@ Feature: Visualizar minha atividade
   Scenario: Deve exibir os arquivos excluídos recentemente
     And clicar em "Excluídos recentemente"
     Then devo visualizar todos os itens excluídos recentemente
+
+  Scenario: Deve exibir os itens arquivados de stories
+    And clicar em arquivados
+    And no seletor no topo selecionar "Arquivo de stories"
+    Then devo visualizar todos os stories já publicados
