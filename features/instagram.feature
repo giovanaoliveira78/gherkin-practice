@@ -127,3 +127,8 @@ Feature: Visualizar minha atividade
     And clicar em arquivados
     And no seletor no topo selecionar "Arquivo de stories"
     Then devo visualizar todos os stories já publicados
+
+  Scenario: Deve exibir os itens arquivados de publicações
+    And clicar em arquivados
+    And no seletor no topo selecionar "Arquivos de posts"
+    Then devo visualizar todos os posts arquivados
