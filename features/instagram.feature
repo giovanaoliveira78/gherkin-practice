@@ -132,3 +132,8 @@ Feature: Visualizar minha atividade
     And clicar em arquivados
     And no seletor no topo selecionar "Arquivos de posts"
     Then devo visualizar todos os posts arquivados
+
+  Scenario: Deve exibir os itens arquivados de lives
+    And clicar em arquivados
+    And no seletor no topo selecionar "Arquivos de lives"
+    Then devo visualizar todos as lives já realizadas
