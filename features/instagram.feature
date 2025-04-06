@@ -137,3 +137,7 @@ Feature: Visualizar minha atividade
     And clicar em arquivados
     And no seletor no topo selecionar "Arquivos de lives"
     Then devo visualizar todos as lives já realizadas
+
+  Scenario: Deve exibir todas as publicações que estão visíveis no perfil
+    And clicar em "Publicações"
+    Then devo visualizar todas as publicações do meu perfil
