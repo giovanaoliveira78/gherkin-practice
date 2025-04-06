@@ -141,3 +141,7 @@ Feature: Visualizar minha atividade
   Scenario: Deve exibir todas as publicações que estão visíveis no perfil
     And clicar em "Publicações"
     Then devo visualizar todas as publicações do meu perfil
+
+  Scenario: Deve exibir todos os reels que estão visíveis no perfil
+    And clicar em "Vídeos do Reels"
+    Then devo visualizar todos os reels do meu perfil
