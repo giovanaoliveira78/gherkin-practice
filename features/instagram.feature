@@ -149,3 +149,7 @@ Feature: Visualizar minha atividade
   Scenario: Deve exibir todos os destaques que estão visíveis no perfil
     And clicar em "Destaques"
     Then devo visualizar todos os destaques do meu perfil
+
+  Scenario: Deve exibir todas as publicações que marquei com "Não tenho interesse"
+    And clicar em "Não tenho interesse"
+    Then devo visualizar todas as publicações que marquei com "Não tenho interesse"
