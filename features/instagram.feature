@@ -153,3 +153,7 @@ Feature: Visualizar minha atividade
   Scenario: Deve exibir todas as publicações que marquei com "Não tenho interesse"
     And clicar em "Não tenho interesse"
     Then devo visualizar todas as publicações que marquei com "Não tenho interesse"
+
+  Scenario: Deve exibir todas as publicações que marquei com "Tenho interesse"
+    And clicar em "Tenho interesse"
+    Then devo visualizar todas as publicações que marquei com "Tenho interesse"
