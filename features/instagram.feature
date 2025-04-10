@@ -157,3 +157,7 @@ Feature: Visualizar minha atividade
   Scenario: Deve exibir todas as publicações que marquei com "Tenho interesse"
     And clicar em "Tenho interesse"
     Then devo visualizar todas as publicações que marquei com "Tenho interesse"
+
+  Scenario: Deve exibir o tempo gasto no instagram
+    And clicar em "Tempo gasto"
+    Then devo visualizar um gráfico mostrando quantas horas passei no instagram
