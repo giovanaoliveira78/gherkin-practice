@@ -161,3 +161,7 @@ Feature: Visualizar minha atividade
   Scenario: Deve exibir o tempo gasto no instagram
     And clicar em "Tempo gasto"
     Then devo visualizar um gráfico mostrando quantas horas passei no instagram
+
+  Scenario: Deve exibir o histórico da conta
+    And clicar em "Histórico da conta"
+    Then devo visualizar todo o histórico de mudança de privacidade, mudança de bio, mudança de nome
