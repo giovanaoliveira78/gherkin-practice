@@ -165,3 +165,7 @@ Feature: Visualizar minha atividade
   Scenario: Deve exibir o histórico da conta
     And clicar em "Histórico da conta"
     Then devo visualizar todo o histórico de mudança de privacidade, mudança de bio, mudança de nome
+
+  Scenario: Deve exibir o histórico de pesquisas recentes
+    And clicar em "Pesquisas recentes"
+    Then devo visualizar todas as pesquisas feitas recentemente
