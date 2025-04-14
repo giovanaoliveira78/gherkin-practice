@@ -169,3 +169,7 @@ Feature: Visualizar minha atividade
   Scenario: Deve exibir o histórico de pesquisas recentes
     And clicar em "Pesquisas recentes"
     Then devo visualizar todas as pesquisas feitas recentemente
+
+  Scenario: Deve transferir informações
+    And clicar em "Transferir informações"
+    Then devo visualizar uma tela informando que posso tranferir minhas informações entre contas
