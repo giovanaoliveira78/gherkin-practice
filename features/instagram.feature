@@ -173,3 +173,7 @@ Feature: Visualizar minha atividade
   Scenario: Deve transferir informações
     And clicar em "Transferir informações"
     Then devo visualizar uma tela informando que posso tranferir minhas informações entre contas
+
+  Scenario: Deve realizar o download das minhas informações
+    And clicar em "Download das suas informações"
+    Then devo visualizar uma tela questionando que tipo de atividade quero realizar o download
