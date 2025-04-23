@@ -189,3 +189,8 @@ Feature: Notificações
     And clicar em em "Pausar tudo"
     And selecionar o período que quero silenciar, 15 minutos, 1 hora, 2 horas, 4 horas, ou 8 horas
     Then deve pausar todas as notificações pelo tempo selecionado
+
+  Scenario: Deve permitir selecionar o modo de descanso
+    And clicar em "Modo de descanso"
+    And clicar no botão de "on/off", selecionar a hora de início e de término e escolher os dias da semana
+    Then as notificações serão silenciadas no périodo selecionado
