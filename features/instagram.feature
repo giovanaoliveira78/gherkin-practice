@@ -177,3 +177,15 @@ Feature: Visualizar minha atividade
   Scenario: Deve realizar o download das minhas informações
     And clicar em "Download das suas informações"
     Then devo visualizar uma tela questionando que tipo de atividade quero realizar o download
+
+Feature: Notificações
+  Background: Caminho até "Notificações"
+    Given que estou na tela inicial do aplicativo
+    And clicar no ícone com a minha foto (ou imagem de persona, caso não possua foto)
+    And clicar no ícone de "sanduíche" no canto superior direito
+    And clicar em "Notificações"
+
+  Scenario: Deve permitir pausar todas as notificações temporariamente
+    And clicar em em "Pausar tudo"
+    And selecionar o período que quero silenciar, 15 minutos, 1 hora, 2 horas, 4 horas, ou 8 horas
+    Then deve pausar todas as notificações pelo tempo selecionado
