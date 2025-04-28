@@ -192,5 +192,11 @@ Feature: Notificações
 
   Scenario: Deve permitir selecionar o modo de descanso
     And clicar em "Modo de descanso"
-    And clicar no botão de "on/off", selecionar a hora de início e de término e escolher os dias da semana
+    And clicar no botão de "on/off" para ativar o modo de descanso, selecionar a hora de início e de término e escolher os dias da semana
     Then as notificações serão silenciadas no périodo selecionado
+
+  Scenario: Deve permitir gerenciar notificações relacionada a posts, stories e comentários
+    And clicar em "Posts, stories e comentários"
+    And visualizar as blocos com opções de "Desativado", "Perfis que eu sigo" e "De todos" para Curtidas, Marcos de curtidas, Curtidas e comentários nas fotos com você, Fotos com você, Comentários, Fixações e curtidas no comentário, Resposta de figurinhas, Resumo diário de comentários, Posts sugeridos para você, Primeiros posts e stories, Notas, Histórico de comentários, Envios para adicionar à publicação, Adicionado à publicação, Convites de Colaboração
+    And selecionar algumas das opções
+    Then as configurações devem ser alteradas
