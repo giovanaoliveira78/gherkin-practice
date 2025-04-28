@@ -200,3 +200,8 @@ Feature: Notificações
     And visualizar as blocos com opções de "Desativado", "Perfis que eu sigo" e "De todos" para Curtidas, Marcos de curtidas, Curtidas e comentários nas fotos com você, Fotos com você, Comentários, Fixações e curtidas no comentário, Resposta de figurinhas, Resumo diário de comentários, Posts sugeridos para você, Primeiros posts e stories, Notas, Histórico de comentários, Envios para adicionar à publicação, Adicionado à publicação, Convites de Colaboração
     And selecionar algumas das opções
     Then as configurações devem ser alteradas
+
+  Scenario: Deve direcionar para a configuração no próprio dispositivo
+    And clicar em "Posts, stories e comentários"
+    And clicar em "Opções adicionais nas configurações do sistema"
+    Then devo ser direcionado para as configurações do meu dispositivo
