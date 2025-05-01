@@ -193,7 +193,7 @@ Feature: Notificações
   Scenario: Deve permitir selecionar o modo de descanso
     And clicar em "Modo de descanso"
     And clicar no botão de "on/off" para ativar o modo de descanso, selecionar a hora de início e de término e escolher os dias da semana
-    Then as notificações serão silenciadas no périodo selecionado
+    Then as notificações serão silenciadas no período selecionado
 
   Scenario: Deve permitir gerenciar notificações relacionada a posts, stories e comentários
     And clicar em "Posts, stories e comentários"
@@ -205,3 +205,10 @@ Feature: Notificações
     And clicar em "Posts, stories e comentários"
     And clicar em "Opções adicionais nas configurações do sistema"
     Then devo ser direcionado para as configurações do meu dispositivo
+
+  Scenario: Deve permitir gerenciar as notificações relacionadas a quem sigo e meus seguidores
+    And clicar em "Seguindo e seguidores"
+    And visualizar os blocos com as opções "Solicitações de seguidores", "Pedidos para seguir aceitos", "Sugestões de conta", "Menções na bio"
+    And visualizar dentro de cada bloco as opções "Desativado" e "Ativado", e no caso do bloco "Menções da bio" que possui as opções "Desativado", "De perfis que eu sigo" e de "De todos"
+    And selecionar algumas das opções
+    Then as configurações devem ser alteradas
