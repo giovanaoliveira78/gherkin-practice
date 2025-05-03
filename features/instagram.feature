@@ -212,3 +212,8 @@ Feature: Notificações
     And visualizar dentro de cada bloco as opções "Desativado" e "Ativado", e no caso do bloco "Menções da bio" que possui as opções "Desativado", "De perfis que eu sigo" e de "De todos"
     And selecionar algumas das opções
     Then as configurações devem ser alteradas
+
+  Scenario: Scenario: Deve direcionar para a configuração no próprio dispositivo
+    And clicar em "Seguindo e seguidores"
+    And clicar em "Opções adicionais nas configurações do sistema"
+    Then devo ser direcionado para as configurações do meu dispositivo
