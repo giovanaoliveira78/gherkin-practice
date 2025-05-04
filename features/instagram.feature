@@ -213,7 +213,12 @@ Feature: Notificações
     And selecionar algumas das opções
     Then as configurações devem ser alteradas
 
-  Scenario: Scenario: Deve direcionar para a configuração no próprio dispositivo
+  Scenario: Deve direcionar para a configuração no próprio dispositivo
     And clicar em "Seguindo e seguidores"
     And clicar em "Opções adicionais nas configurações do sistema"
     Then devo ser direcionado para as configurações do meu dispositivo
+
+  Scenario: Deve permitir gerenciar as notificações relacionadas a mensagens
+    And clicar em "Mensagens"
+    And selecionar algumas das opções
+    Then as configurações devem ser alteradas
