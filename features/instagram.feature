@@ -220,5 +220,6 @@ Feature: Notificações
 
   Scenario: Deve permitir gerenciar as notificações relacionadas a mensagens
     And clicar em "Mensagens"
+    And visualizar os blocos com as opções "Solicitações de contato", "Mensagens de bate-papos individuais e em grupo","Lembretes de mensagens", "Solicitações do grupo", "Convites para canais de transmissão", "Mensagens do canal de transmissão", "Respostas do canal de transmissão", "Curtidas em respostas do canal de transmissão"
     And selecionar algumas das opções
     Then as configurações devem ser alteradas
