@@ -222,4 +222,8 @@ Feature: Notificações
     And clicar em "Mensagens"
     And visualizar os blocos com as opções "Solicitações de contato", "Mensagens de bate-papos individuais e em grupo","Lembretes de mensagens", "Solicitações do grupo", "Convites para canais de transmissão", "Mensagens do canal de transmissão", "Respostas do canal de transmissão", "Curtidas em respostas do canal de transmissão"
     And selecionar algumas das opções
-    Then as configurações devem ser alteradas
+
+  Scenario: Deve direcionar para a configuração no próprio dispositivo
+    And clicar em "Mensagens"
+    And clicar em "Opções adicionais nas configurações do sistema"
+    Then devo ser direcionado para as configurações do meu dispositivo
