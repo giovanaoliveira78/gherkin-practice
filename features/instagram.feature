@@ -227,3 +227,9 @@ Feature: Notificações
     And clicar em "Mensagens"
     And clicar em "Opções adicionais nas configurações do sistema"
     Then devo ser direcionado para as configurações do meu dispositivo
+
+  Scenario: Deve permitir gerenciar as notificações relacionadas a ligações
+    And clicar em "Ligações"
+    And Visualizar as opções "Desativado", "De perfis que eu sigo", "De todos"
+    And clicar em "Desativado"
+    Then devo visualizar um modal de confirmação com a frase "Se você desativar as notificações, poderá não ver as ligações recebidas", e os botões de "Desativar" e "Cancelar"
