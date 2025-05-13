@@ -238,3 +238,9 @@ Feature: Notificações
     And clicar em "Ligações"
     And clicar em "Opções adicionais nas configurações do sistema"
     Then devo ser direcionado para as configurações do meu dispositivo
+
+  Scenario: Deve permitir gerenciar as notificações relacionadas a live e reels
+    And clicar em "Live e reels"
+    And visualizar as opções "Desativado" e "Ativado" nos blocos "Áudio original", "Remixes", "Vídeos ao vivo", "Reels carregados recentemente", "Reels mais assistidos", "Sua vez", "Respostas a comandos", e "Reels feitos para você"
+    And selecionar algumas das opções
+    Then as configuração devem ser alteradas
