@@ -255,3 +255,8 @@ Feature: Notificações
     And visualizar as opções "Desativado" e "Ativado" nos blocos "Suas campanhas de arrecadação de fundos" e "Campanhas de arrecadação de fundos de outras pessoas"
     And selecionar algumas das opções
     Then as configuração devem ser alteradas
+
+  Scenario: Deve direcionar para a configuração no próprio dispositivo
+    And clicar em "Campanhas e arrecadação de fundos"
+    And clicar em "Opções adicionais nas configurações do sistema"
+    Then devo ser direcionado para as configurações do meu dispositivo
