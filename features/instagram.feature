@@ -260,3 +260,9 @@ Feature: Notificações
     And clicar em "Campanhas e arrecadação de fundos"
     And clicar em "Opções adicionais nas configurações do sistema"
     Then devo ser direcionado para as configurações do meu dispositivo
+
+  Scenario: Deve permitir gerenciar as notificações relacionadas a "Do Instagram"
+    And clicar em "Do Instagram"
+    And visualizar as opções "Desativado" e "Ativado" nos blocos "Lembretes", "Avisos e feedback de produtos", "Carregamentos e compatilhamentos", "Integridade do conteúdo", "Solicitação de suporte", e "Locais populares"
+    And selecionar algumas das opções
+    Then as configuração devem ser alteradas
