@@ -266,3 +266,8 @@ Feature: Notificações
     And visualizar as opções "Desativado" e "Ativado" nos blocos "Lembretes", "Avisos e feedback de produtos", "Carregamentos e compatilhamentos", "Integridade do conteúdo", "Solicitação de suporte", e "Locais populares"
     And selecionar algumas das opções
     Then as configuração devem ser alteradas
+
+  Scenario: Deve direcionar para a configuração no próprio dispositivo
+    And clicar em "Do Instagram"
+    And clicar em "Opções adicionais nas configurações do sistema"
+    Then devo ser direcionado para as configurações do meu dispositivo
