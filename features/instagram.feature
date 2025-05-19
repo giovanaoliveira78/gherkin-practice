@@ -271,3 +271,9 @@ Feature: Notificações
     And clicar em "Do Instagram"
     And clicar em "Opções adicionais nas configurações do sistema"
     Then devo ser direcionado para as configurações do meu dispositivo
+
+  Scenario: Deve permitir gerenciar as notificações relacionadas a aniversários
+    And clicar em "Aniversários"
+    And visualizar as opções "Desativado" e "Ativado" no bloco "Aniversários"
+    And selecionar algumas das opções
+    Then as configuração devem ser alteradas
