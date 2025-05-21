@@ -277,3 +277,8 @@ Feature: Notificações
     And visualizar as opções "Desativado" e "Ativado" no bloco "Aniversários"
     And selecionar algumas das opções
     Then as configuração devem ser alteradas
+
+  Scenario: Deve direcionar para a configuração no próprio dispositivo
+    And clicar em "Aniversários"
+    And clicar em "Opções adicionais nas configurações do sistema"
+    Then devo ser direcionado para as configurações do meu dispositivo
