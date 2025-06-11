@@ -282,3 +282,8 @@ Feature: Notificações
     And clicar em "Aniversários"
     And clicar em "Opções adicionais nas configurações do sistema"
     Then devo ser direcionado para as configurações do meu dispositivo
+
+  Scenario: Deve permitir gerenciar notificações por e-mail
+    And clicar em "Notificações por e-mail"
+    And visualizar os botões de on/off para "Emails de feedback", "Emails de lembrete", "Emails de produto", "Emails de notícias", "Emails de suporte"
+    Then ao clicar no botão de on/off a notificação deve ser desligada ou ligada
