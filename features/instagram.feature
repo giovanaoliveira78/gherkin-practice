@@ -287,3 +287,9 @@ Feature: Notificações
     And clicar em "Notificações por e-mail"
     And visualizar os botões de on/off para "Emails de feedback", "Emails de lembrete", "Emails de produto", "Emails de notícias", "Emails de suporte"
     Then ao clicar no botão de on/off a notificação deve ser desligada ou ligada
+
+  
+  Scenario: Deve permitir gerenciar notificações de compras
+    And clicar em "Compras"
+    And visualizar os botões de on/off para "Contas que você segue", e "Sugestões para você"
+    Then ao clicar no botão de on/off a notificação deve ser desligada ou ligada
