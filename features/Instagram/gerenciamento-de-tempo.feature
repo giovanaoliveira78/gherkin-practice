@@ -11,3 +11,8 @@ Feature: Gerenciar o tempo de uso no app
   Scenario: Deve permitir estipular um tempo de uso diario
     And clicar em "Limite diário"
     Then devo visualizar as opções "15 minutos", "30 minutos", "45 minutos", "1 hora", "2 horas" ou "Desativado"
+
+  Scenario: Deve permitir acionar o modo descanso
+    And clicar em "Modo de descanso"
+    And clicar no botão de on/off, e selecionar a hora de início, hora de término, escolher os dias da semana e clicar em "Salvar"]
+    Then o modo de descanso deve ser acionado conforme selecionado
